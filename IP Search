@@ -1,0 +1,20 @@
+Opens a search in multiple IP checker's with your input:
+
+JS:
+
+var ip=prompt("Enter a IP Address: ");
+var talos="https://talosintelligence.com/reputation_center/lookup?search="+ip;
+window.open(talos, "_blank");
+var vt="https://www.virustotal.com/gui/ip-address/"+ip;
+window.open(vt, "_blank");
+var alien="https://otx.alienvault.com/browse/global?section=All&q="+ip;
+window.open(alien, "_blank");
+var censys="https://censys.io/ipv4/"+ip;
+window.open(censys, "_blank");
+var shodan="https://www.shodan.io/search?query="+ip;
+window.open(shodan, "_blank");
+var abuse="https://www.abuseipdb.com/check/"+ip;
+window.open(abuse, "_blank");
+
+Bookmarklet: 
+javascript:(function()%7Bvar%20ip%3Dprompt(%22Enter%20a%20IP%20Address%3A%20%22)%2Ctalos%3D%22https%3A%2F%2Ftalosintelligence.com%2Freputation_center%2Flookup%3Fsearch%3D%22%2Bip%3Bwindow.open(talos%2C%22_blank%22)%3Bvar%20vt%3D%22https%3A%2F%2Fwww.virustotal.com%2Fgui%2Fip-address%2F%22%2Bip%3Bwindow.open(vt%2C%22_blank%22)%3Bvar%20alien%3D%22https%3A%2F%2Fotx.alienvault.com%2Fbrowse%2Fglobal%3Fsection%3DAll%26q%3D%22%2Bip%3Bwindow.open(alien%2C%22_blank%22)%3Bvar%20censys%3D%22https%3A%2F%2Fcensys.io%2Fipv4%2F%22%2Bip%3Bwindow.open(censys%2C%22_blank%22)%3Bvar%20shodan%3D%22https%3A%2F%2Fwww.shodan.io%2Fsearch%3Fquery%3D%22%2Bip%3Bwindow.open(shodan%2C%22_blank%22)%3Bvar%20abuse%3D%22https%3A%2F%2Fwww.abuseipdb.com%2Fcheck%2F%22%2Bip%3Bwindow.open(abuse%2C%22_blank%22)%7D)()
