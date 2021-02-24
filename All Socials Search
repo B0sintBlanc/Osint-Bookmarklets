@@ -1,3 +1,5 @@
+Open a search with the term you enter and tries to either open a profile / do a search / do a google dork. Nice time saver. 
+
 JS: 
 var username=prompt("Enter a username: ");
 var fb="https://facebook.com/"+username;window.open(fb,"_blank");
