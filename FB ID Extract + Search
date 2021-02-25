@@ -1,0 +1,12 @@
+Extracts ID Then searches term you enter on that profile:
+
+JS:
+var html = document.documentElement.innerHTML;
+var subhtml = html.split('userID":"')[1];
+var output = subhtml.split('"},')[0];
+var search = prompt ("enter your search term:");
+var fb = "https://facebook.com/profile/"+output+"/search?q="+search;
+window.open(fb, " _blank");
+
+Bookmarklet:
+javascript:(function()%7Bvar%20html%3Ddocument.documentElement.innerHTML%2Csubhtml%3Dhtml.split('userID%22%3A%22')%5B1%5D%2Coutput%3Dsubhtml.split('%22%7D%2C')%5B0%5D%2Csearch%3Dprompt(%22enter%20your%20search%20term%3A%22)%2Cfb%3D%22https%3A%2F%2Ffacebook.com%2Fprofile%2F%22%2Boutput%2B%22%2Fsearch%3Fq%3D%22%2Bsearch%3Bwindow.open(fb%2C%22%20_blank%22)%7D)()
