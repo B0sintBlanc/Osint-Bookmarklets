@@ -1,0 +1,9 @@
+JS: 
+var search=prompt("Enter your search term:");
+var from=prompt("Enter your start date:(YYYY-MM-DD)");
+var to=prompt("Enter your end date:(YYYY-MM-DD)");
+var twitter="https://twitter.com/search?q="+search+"%20until%3A"+to+"%20since%3A"+from;
+window.open(twitter, "_blank");
+
+Bookmarklet
+javascript:(function()%7Bvar%20search%3Dprompt(%22Enter%20your%20search%20term%3A%22)%2Cfrom%3Dprompt(%22Enter%20your%20start%20date%3A(YYYY-MM-DD)%22)%2Cto%3Dprompt(%22Enter%20your%20end%20date%3A(YYYY-MM-DD)%22)%2Ctwitter%3D%22https%3A%2F%2Ftwitter.com%2Fsearch%3Fq%3D%22%2Bsearch%2B%22%2520until%253A%22%2Bto%2B%22%2520since%253A%22%2Bfrom%3Bwindow.open(twitter%2C%22_blank%22)%7D)()
