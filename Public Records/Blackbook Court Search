@@ -1,0 +1,7 @@
+JS:
+var search = prompt("Enter the State Abbreviation(-county if desired):");
+var court = "https://www.blackbookonline.info/"+search+"-County-Court-Records.aspx";
+window.open(court, "_blank");
+
+Bookmarklet:
+javascript:(function()%7Bvar%20search%3Dprompt(%22Enter%20the%20State%20Abbreviation(-county%20if%20desired)%3A%22)%2Ccourt%3D%22https%3A%2F%2Fwww.blackbookonline.info%2F%22%2Bsearch%2B%22-County-Court-Records.aspx%22%3Bwindow.open(court%2C%22_blank%22)%7D)()
