@@ -1,0 +1,9 @@
+Searches your term in 2021:
+
+JS
+var search=prompt("Enter your search term:");
+var twitter="https://twitter.com/search?q="+search+"%20until%3A2021-12-31%20since%3A2021-01-01";
+window.open(twitter, "_blank");
+
+Bookmarklet:
+javascript:(function()%7Bvar%20search%3Dprompt(%22Enter%20your%20search%20term%3A%22)%2Ctwitter%3D%22https%3A%2F%2Ftwitter.com%2Fsearch%3Fq%3D%22%2Bsearch%2B%22%2520until%253A2021-12-31%2520since%253A2021-01-01%22%3Bwindow.open(twitter%2C%22_blank%22)%7D)()
