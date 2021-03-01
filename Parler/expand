@@ -1,0 +1,7 @@
+Expand all comments and replies on Parler (guest).
+
+Javascript:
+for(var btns=document.querySelectorAll(".show-comments--wrapper,.show-replies--wrapper"),i=0;i<btns.length;i++)btns[i].click();
+
+Bookmarklet:
+javascript:(function()%7Bfor(var%20btns%3Ddocument.querySelectorAll(%22.show-comments--wrapper%2C.show-replies--wrapper%22)%2Ci%3D0%3Bi%3Cbtns.length%3Bi%2B%2B)btns%5Bi%5D.click()%7D)()
