@@ -1,0 +1,7 @@
+This is a click button scroll for instagram followers. I hope to get it to automically reissue after loading but haven't been able to figure that out yet.
+
+JavaScript
+document.getElementsByClassName('isgrP')[0].scrollTop+=100000000; 
+
+Bookmarklet:
+javascript:(function()%7Bdocument.getElementsByClassName("isgrP")%5B0%5D.scrollTop%2B%3D1e8%7D)() 
