@@ -1,0 +1,8 @@
+JS:
+var html = document.documentElement.innerHTML;
+var subhtml = html.split('com\/groups\/')[1];
+var output = subhtml.split('\/permalink\/')[0];
+alert(output);
+
+Bookmarklet:
+javascript:(function()%7Bvar%20html%3Ddocument.documentElement.innerHTML%2Csubhtml%3Dhtml.split(%22com%2Fgroups%2F%22)%5B1%5D%2Coutput%3Dsubhtml.split(%22%2Fpermalink%2F%22)%5B0%5D%3Balert(output)%7D)()
