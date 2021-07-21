@@ -1,0 +1,10 @@
+// Twitter search for 2 people conversation
+
+JS:
+var personFrom=prompt("Enter from person:");
+var personTo=prompt("Enter to person:");
+var twitter="https://twitter.com/search?q=from%3A"+personFrom+"%20to%3A"+personTo+"&src=typed_query&f=live";
+window.open(twitter, "_blank");
+
+Bookmarklet:
+javascript:(function()%7Bvar%20personFrom%3Dprompt(%22Enter%20from%20person%3A%22)%3Bvar%20personTo%3Dprompt(%22Enter%20to%20person%3A%22)%3Bvar%20twitter%3D%22https%3A%2F%2Ftwitter.com%2Fsearch%3Fq%3Dfrom%253A%22%2BpersonFrom%2B%22%2520to%253A%22%2BpersonTo%2B%22%26src%3Dtyped_query%26f%3Dlive%22%3Bwindow.open(twitter%2C%20%22_blank%22)%7D)()
