@@ -1,0 +1,9 @@
+// Keybase API
+
+JS:
+var username=prompt("Enter the username:");
+var keybase="https://keybase.io/_/api/1.0/user/lookup.json?username="+username;
+window.open(keybase, "_blank");
+
+Bookmarklet:
+javascript:(function()%7Bvar%20username%3Dprompt(%22Enter%20the%20username%3A%22)%3Bvar%20keybase%3D%22https%3A%2F%2Fkeybase.io%2F_%2Fapi%2F1.0%2Fuser%2Flookup.json%3Fusername%3D%22%2Busername%3Bwindow.open(keybase%2C%20%22_blank%22)%7D)()

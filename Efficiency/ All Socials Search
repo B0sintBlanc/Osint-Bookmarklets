@@ -1,11 +1,11 @@
-Open a search with the term you enter and tries to either open a profile / do a search / do a google dork. Nice time saver. 
+Open a search with the term you enter and tries to either open a profile / do a search / do a google dork. Nice time saver.
 
-JS: 
+JS:
 var username=prompt("Enter a username: ");
 var fb="https://facebook.com/"+username;window.open(fb,"_blank");
 window.open(fb, "_blank");
-var search="https://www.facebook.com/search/top/?q="+username;
-window.open(search,"_blank");
+var fbsearch="https://www.facebook.com/search/top/?q="+username;
+window.open(fbsearch,"_blank");
 var insta="https://www.instagram.com/"+username;
 window.open(insta, "_blank");
 var twt="https://twitter.com/search?q="+username;
@@ -18,6 +18,9 @@ var bing="https://www.bing.com/search?q=%22"+username+"%22";
 window.open(bing, "_ blank");
 var duck="https://duckduckgo.com/?q=%22"+username+"%22";
 window.open(duck, "_blank");
+var keybase="https://keybase.io/_/api/1.0/user/lookup.json?username="+username;
+window.open(keybase, "_blank");
+
 
 Bookmarklet:
-javascript:(function()%7Bvar%20username%3Dprompt(%22Enter%20a%20username%3A%20%22)%2Cfb%3D%22https%3A%2F%2Ffacebook.com%2F%22%2Busername%3Bwindow.open(fb%2C%22_blank%22)%2Cwindow.open(fb%2C%22_blank%22)%3Bvar%20search%3D%22https%3A%2F%2Fwww.facebook.com%2Fsearch%2Ftop%2F%3Fq%3D%22%2Busername%3Bwindow.open(search%2C%22_blank%22)%3Bvar%20insta%3D%22https%3A%2F%2Fwww.instagram.com%2F%22%2Busername%3Bwindow.open(insta%2C%22_blank%22)%3Bvar%20twt%3D%22https%3A%2F%2Ftwitter.com%2Fsearch%3Fq%3D%22%2Busername%3Bwindow.open(twt%2C%22_blank%22)%3Bvar%20link%3D%22https%3A%2F%2Fwww.linkedin.com%2Fsearch%2Fresults%2Fall%2F%3Fkeywords%3D%22%2Busername%3Bwindow.open(link%2C%22%20_blank%22)%3Bvar%20dork%3D%22https%3A%2F%2Fwww.google.com%2Fsearch%3Fclient%3Dfirefox-b-1-e%26q%3D%2522%22%2Busername%2B%22%2522%22%3Bwindow.open(dork%2C%22%20_blank%22)%3Bvar%20bing%3D%22https%3A%2F%2Fwww.bing.com%2Fsearch%3Fq%3D%2522%22%2Busername%2B%22%2522%22%3Bwindow.open(bing%2C%22_%20blank%22)%3Bvar%20duck%3D%22https%3A%2F%2Fduckduckgo.com%2F%3Fq%3D%2522%22%2Busername%2B%22%2522%22%3Bwindow.open(duck%2C%22_blank%22)%7D)()
+javascript:(function()%7Bvar%20username%3Dprompt(%22Enter%20a%20username%3A%20%22)%3Bvar%20fb%3D%22https%3A%2F%2Ffacebook.com%2F%22%2Busername%3Bwindow.open(fb%2C%22_blank%22)%3Bwindow.open(fb%2C%20%22_blank%22)%3Bvar%20fbsearch%3D%22https%3A%2F%2Fwww.facebook.com%2Fsearch%2Ftop%2F%3Fq%3D%22%2Busername%3Bwindow.open(fbsearch%2C%22_blank%22)%3Bvar%20insta%3D%22https%3A%2F%2Fwww.instagram.com%2F%22%2Busername%3Bwindow.open(insta%2C%20%22_blank%22)%3Bvar%20twt%3D%22https%3A%2F%2Ftwitter.com%2Fsearch%3Fq%3D%22%2Busername%3Bwindow.open(twt%2C%22_blank%22)%3Bvar%20link%3D%22https%3A%2F%2Fwww.linkedin.com%2Fsearch%2Fresults%2Fall%2F%3Fkeywords%3D%22%2Busername%3Bwindow.open(link%2C%22%20_blank%22)%3Bvar%20dork%3D%22https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3D%2522%22%2Busername%2B%22%2522%22%3Bwindow.open(dork%2C%20%22%20_blank%22)%3Bvar%20bing%3D%22https%3A%2F%2Fwww.bing.com%2Fsearch%3Fq%3D%2522%22%2Busername%2B%22%2522%22%3Bwindow.open(bing%2C%20%22_%20blank%22)%3Bvar%20duck%3D%22https%3A%2F%2Fduckduckgo.com%2F%3Fq%3D%2522%22%2Busername%2B%22%2522%22%3Bwindow.open(duck%2C%20%22_blank%22)%3Bvar%20keybase%3D%22https%3A%2F%2Fkeybase.io%2F_%2Fapi%2F1.0%2Fuser%2Flookup.json%3Fusername%3D%22%2Busername%3Bwindow.open(keybase%2C%20%22_blank%22)%7D)()

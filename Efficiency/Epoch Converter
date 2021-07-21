@@ -1,0 +1,9 @@
+// Epoch converter
+
+JS:
+var utcSeconds=prompt("Enter epoch time:");
+var myDate = new Date( utcSeconds *1000);
+alert(myDate.toGMTString()+"<br>"+myDate.toLocaleString());
+
+Bookmarklet:
+javascript:(function()%7Bvar%20utcSeconds%3Dprompt(%22Enter%20epoch%20time%3A%22)%3Bvar%20myDate%20%3D%20new%20Date(%20utcSeconds%20*1000)%3Balert(myDate.toGMTString()%2B%22%3Cbr%3E%22%2BmyDate.toLocaleString())%7D)()
